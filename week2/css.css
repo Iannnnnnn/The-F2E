@@ -1,0 +1,274 @@
+body{
+    min-width: 1200px;
+}
+*{
+    box-sizing:border-box;
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    background-color: rgb(242, 242, 242);;
+}
+a{
+    text-decoration-line: none;
+}
+input,select{
+    border-style: none;
+    height: 2.5em;
+}
+input,select:focus{
+    outline:none;
+}
+:root{
+    --main-color:#7828B4;
+    --subtone:#9013FE;
+    --iconcolor:#000000;
+    font-family: 'Roboto', sans-serif;
+
+}
+input:focus{
+    outline:none;
+}
+.subtitle{
+    font-weight: bold;
+    font-size: 1.25em;
+}
+.img{
+    width: 220px;
+    height: 220px;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+}
+.bold{
+    font-weight: bold;
+}
+.color-gray{
+    color: #9B9B9B;
+}
+.inline{
+    display: inline;
+}
+i{
+    color:var(--iconcolor);
+    margin-right:5px; 
+}
+input[type=date]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    display: none;
+}
+.font-sm{
+    font-size: 0.5rem;
+}
+.hide{
+    display: none;
+}
+/* 導覽列 */
+header{
+    width: 100%;
+    background-color: var(--main-color);
+}
+.nav{
+    width: 75em;
+    height: 5.75em;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items:center; 
+
+}
+.logo{
+    margin-left: 40px;
+    width: 240px;
+    flex:0 0 240px;
+    text-align: center;
+}
+.logo .logo-p{
+    font-family:'Patua+One',sans-serif;
+    font-size: 2.25em;
+    color: #FFFFFF;
+    
+}
+.seachbar{
+    border-bottom: 1px solid #FFFFFF;
+    width: 370px;
+    flex: 0 0 370px;  
+    margin: 0em 0em 0em 2.5em;  
+}
+.seachbar i::before{
+    color: #FFFFFF;
+    margin-right: 0.5em;
+}
+.seachbar input{
+    width: 14em;
+    height: 2em;
+    background-color: inherit;
+    border-style: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    margin: 0px;
+}
+.seachbar input::placeholder{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: rgba(255,255,255,0.50);
+}
+/* 中間 */
+.mid{
+    min-height: 90vh;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #F2F2F2;
+    width: 75em;
+    margin: 0px auto;
+}
+.mid .sidebar{
+    width: 20%;
+    height: 400px;
+    background-color:rgba(168, 168, 168, 0.253);
+    margin: 1em 2em 2em 2em;
+    font-size: 1.25em;
+}
+.sidebar>.location{
+
+}  
+
+#zonelist{
+    width: 150px;
+    margin-bottom: 30px;
+}
+.mid .content{
+    position: relative;
+}
+.part{
+    margin: 32px 0px;
+    padding: 0px 50px;
+    border-bottom:1px solid #D7D7D7; 
+}
+.date-form{ 
+    display: flex;
+    flex-direction: column;
+}
+#day_to{
+    margin-bottom:30px; 
+}
+.part:last-child{
+    border-bottom: none;
+}
+.subtitle{
+    margin: 20px 0px;
+}
+#selectbox{
+    margin-bottom: 20px;
+    width: 200px;
+}
+
+.checkoption{
+    position: relative;
+}
+.checkoption>label{
+    position: absolute;
+    top:5px;
+}
+.list{
+    min-height: 700px;
+}
+.item{
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 20px;
+    width: 730px;
+}
+.item:hover{
+    box-shadow:1px 1px 10px #9013FE;
+}
+.introduction{
+    max-width: 560px;
+    max-height: 220px;
+    background-color: #fff;
+    padding: 20px;
+}
+.introduction .area{
+    width: 100px;
+}
+.introduction span,p{
+    margin: 15px 0px;
+}
+.introduction span{
+    margin-right:20px;
+}
+.introduction .subtitle{
+    margin-top: 0px;
+}
+.introduction .narrative{
+    width: 470px;
+    height: 40px;
+    overflow: hidden;
+    box-shadow: 0px -5px 20px  white inset;
+}
+.taglist-inside{
+    display: flex;
+    margin-bottom:10px;  
+}
+.taglist{
+    border: 1px solid #D7D7D7;
+    border-radius: 100px;
+    background-color: #D7D7D7;
+}
+.taglist p{
+    margin: 2px 10px;
+    color: #fff;
+}
+.filter-tag{
+    display: flex;
+    justify-content: right;
+    align-content: center;
+    flex-flow: row wrap;
+    font-size: 16px;
+    margin-bottom:20px; 
+}
+.filter-tag > .tag{
+    margin: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #9013FE;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 30px;
+    font-size: 1em;
+
+}
+/* .filter-tag > .tag:hover{
+    background-color: #9013FE;
+}
+.filter-tag > .tag:hover *{
+    color:#FFFFFF;
+
+} */
+.filter-tag > .tag.active{
+    background-color: #9013FE;
+}
+.filter-tag > .tag.active *{
+    color:#FFFFFF;
+}
+
+.filter-tag .tag i{
+    margin-left:10px; 
+    color:#9013FE;
+}
+.filter-tag .tag p{
+    margin: 7px;
+    color:#9013FE;
+}
+.openup{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #F2F2F2;
+    display: none;
+}

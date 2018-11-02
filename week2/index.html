@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 字型 -->
+    <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="./css.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <div class="logo">
+                <a class="logo-p" href="#">Filter</a>
+            </div>
+            <div class="seachbar">
+                <i class="fas fa-search fa-lg"></i>
+                <input id="search" type="text" placeholder="Explore your own activites">
+            </div>
+        </div>
+    </header>
+
+    <div class="mid">
+        <aside class="sidebar">
+            <div class="part location">
+                <p class="subtitle">Location</p>
+                <select name="location" id="zonelist">
+                    <option value="" selected>全部</option>
+                </select>
+            </div>    
+            <div class="part date" style="display: none">
+                <p class="subtitle">Date</p>
+                <div class="date-form">
+                    <label for="day_from">form</label>
+                    <input id="day_from" type="date">
+                    <br>
+                    <label for="day_to">to</label>
+                    <input id="day_to" type="date">
+                </div>
+            </div>
+            <!-- <div class="part categories">
+                <p class="subtitle">Categories</p>
+                <div class="checkboxlist">
+                    <div class="checkoption">
+                        <input type="checkbox" id="option1">
+                        <label for="option1">免費參觀</label><br>
+                    </div>
+                    <div class="checkoption">
+                        <input type="checkbox" id="option2">
+                        <label for="option2">全天候開放</label><br>
+                    </div>                     
+                </div>
+                
+
+            </div> -->
+            <div class="part">
+                <p class="subtitle">Categories</p>
+                <div class="filter-tag">
+                    <div class="tag">
+                        <p>免費參觀</p>
+                    </div>
+                    <div class="tag">
+                        <p>全天候開放</p>
+                    </div>
+                </div>
+            </div>
+            
+        </aside>
+        <section class="content">
+            <p style="font-size: 1.5em">Showing <span class="shownumber bold" style="color: #9013FE;">0</span> results </p>
+            
+            <div class="list">
+            </div>
+            <div class="openup">
+            </div>
+        </section>
+    </div>
+
+    <script src="./js.js"></script>
+</body>
+
+
+</html>
