@@ -15,7 +15,7 @@
             // 取得所有區域
             getZone(AllAttractions);
             //顯示搜尋結果
-            getinfornation(AllAttractions);
+            getinformation(AllAttractions);
             matcharea = AllAttractions;
             matchcost = AllAttractions;
             matchopentime = AllAttractions;
@@ -53,7 +53,7 @@
         zone = zonelist.value;
         if(zonelist.value === ""){
             matcharea = AllAttractions;
-            // getinfornation(AllAttractions);
+            // getinformation(AllAttractions);
             finallist(matcharea,matchcost,matchopentime,matchword);
         }
         else{
@@ -140,13 +140,13 @@
         });
 
         // console.log(matcharea.length,matchcost.length,matchopentime.length,matchword.length );
-        getinfornation(itemlist);
+        getinformation(itemlist);
     }
 
     //showlist
     let item = document.getElementsByClassName('list')[0];
     let length = 0;
-    function getinfornation(AllAttractions){
+    function getinformation(AllAttractions){
         let itemHTML = item.innerHTML;
         itemHTML = "";
         let length = AllAttractions.length;
